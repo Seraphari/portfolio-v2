@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  biz_summary_1: MyText
+  biz_summary_2: MyText
+  biz_summary_3: MyText
+  biz_summary_4: MyText
+  biz_summary_5: MyText
+  biz_intro: MyText
+  problem_statement: MyText
+  recommended_solutions: MyText
+  stakeholder_engagement: MyText
+
+two:
+  project: two
+  biz_summary_1: MyText
+  biz_summary_2: MyText
+  biz_summary_3: MyText
+  biz_summary_4: MyText
+  biz_summary_5: MyText
+  biz_intro: MyText
+  problem_statement: MyText
+  recommended_solutions: MyText
+  stakeholder_engagement: MyText

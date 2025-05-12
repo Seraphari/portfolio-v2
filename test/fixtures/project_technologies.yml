@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  tech_summary_1: MyText
+  tech_summary_2: MyText
+  tech_summary_3: MyText
+  tech_summary_4: MyText
+  tech_summary_5: MyText
+  tech_intro: MyText
+  system_architecture: MyText
+  development_approach: MyText
+
+two:
+  project: two
+  tech_summary_1: MyText
+  tech_summary_2: MyText
+  tech_summary_3: MyText
+  tech_summary_4: MyText
+  tech_summary_5: MyText
+  tech_intro: MyText
+  system_architecture: MyText
+  development_approach: MyText
