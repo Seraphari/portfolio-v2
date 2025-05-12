@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  design_summary_1: MyText
+  design_summary_2: MyText
+  design_summary_3: MyText
+  design_summary_4: MyText
+  design_summary_5: MyText
+  design_principles: MyText
+  user_experience_design: MyText
+  user_interface: MyText
+
+two:
+  project: two
+  design_summary_1: MyText
+  design_summary_2: MyText
+  design_summary_3: MyText
+  design_summary_4: MyText
+  design_summary_5: MyText
+  design_principles: MyText
+  user_experience_design: MyText
+  user_interface: MyText

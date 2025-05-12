@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  role: one
+  company_name: MyString
+  starting_year: MyString
+  ending_year: MyString
+  certification_summary_1: MyText
+  certification_summary_2: MyText
+  certification_summary_3: MyText
+  certification_summary_4: MyText
+  certification_summary_5: MyText
+
+two:
+  role: two
+  company_name: MyString
+  starting_year: MyString
+  ending_year: MyString
+  certification_summary_1: MyText
+  certification_summary_2: MyText
+  certification_summary_3: MyText
+  certification_summary_4: MyText
+  certification_summary_5: MyText
