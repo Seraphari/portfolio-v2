@@ -75,17 +75,21 @@ $color-black-transparent: rgba(13, 13, 13, 0.3);
 $color-alert: #F38904;
 $color-success: #82B418;
 $color-card: #D9D9D9;
+$color-background-card: #EBEBEB;
 
 body {
   background-color: $color-background;
 }
+//////////////////////////////////////////////////////////////////////
+/// 1. Homepage
+//////////////////////////////////////////////////////////////////////
 
-// 1. Homepage
 .homepage {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  // padding: 0 25vw 10vh 25vw;
 }
 
 .hero-container {
@@ -93,7 +97,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vw;
+  min-height: 30vw;
 }
 
 // 1.1. Hero Header
@@ -119,24 +123,72 @@ body {
   color: $color-primary;
 }
 
-// 2. Project container
+//////////////////////////////////////////////////////////////////////
+/// 2. Project container
+//////////////////////////////////////////////////////////////////////
+
 
 .project-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding-top: 8px;
-  padding-bottom: 10vw;
+  padding-bottom: 10vh;
 }
 
 .project-cluster {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-left: 221px;
-  padding-right: 221px;
-  min-width: 20vw;
-  min-height: 20vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
+//////////////////////////////////////////////////////////////////////
+/// 3. Experience container
+//////////////////////////////////////////////////////////////////////
+.experience-container {
+  padding: 0 25vw 10vh 25vw;
+}
+
+.experience-cluster {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-card {
+  background-color: $color-background-card;
+  padding: 12px 36px;
+}
+
+.experience-card-header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-card-header .p-bold, p{
+  margin: 0;
+}
+
+.experience-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 0;
+}
+
+.experience-card-body li {
+  text-align: left;
+  font-size: 11px;
+  padding-left: 12px;
+}
+
+ul {
+  padding-left: 12px;
 }
 
 // Footer
@@ -144,7 +196,7 @@ body {
 footer {
   border-top: 3px solid $color-primary;
   background-color: $color-card;
-  padding: 40px 221px 15vh 221px;
+  padding: 40px 25vw 5vh 25vw; // Applies to .copyright also
   display: flex;
   justify-content: space-between;
 }
@@ -155,23 +207,117 @@ footer {
 }
 
 .contact-footer {
-  max-width: 25vw;
+  max-width: 20vw;
 }
 
+.contact-footer p {
+  margin-bottom: 16px;
+}
+
+.email-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.copyright {
+  padding: 40px 221px 15vh 221px;
+  padding: 0 221px 2vh 221px;
+  background-color: $color-card;
+  color: $color-black-transparent;
+}
 
 /* Atoms */
 .l-pri-btn-icon {
+  position: relative;
   margin: 0 auto;
   width: 245px;
-  height: 45px;
+  height: 40px;
   background-color: $color-primary;
   color: $color-white;
+  border: 2px solid transparent;
   border-radius: 8px;
   display: flex;
   justify-content: center;
-  gap: 8px;
   align-items: center;
+  gap: 8px;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 12px;
+
+  // .default-icon,
+  // .hover-icon {
+  //   position: absolute;
+  //   left: 40px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   width: 20px;
+  //   height: 20px;
+  // }
+
+  // .hover-icon {
+  //   display: none;
+  // }
+
+  // &:hover {
+  //   background-color: $color-white;
+  //   border: 2px solid $color-primary;
+  //   color: $color-primary;
+  // }
+
+  // &:hover .default-icon {
+  //   display: none;
+  // }
+
+  // &:hover .hover-icon {
+  //   display: block;
+  // }
+
+}
+
+
+.s-pri-btn-solid {
+  background-color: $color-primary;
+  color: $color-white;
+  border: 1px solid $color-primary;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  height: 40px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-pri-btn-solid:hover {
+  background-color: $color-white;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+}
+
+.form-field-m {
+  border: 2px solid $color-primary;
+  background-color: $color-white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-primary-transparent;
+  cursor: pointer;
+}
+
+.form-field-m input {
+  border: none;
+  background: $color-white;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  width: 100%;
+  outline: none;
+  padding-left: 16px;
 }

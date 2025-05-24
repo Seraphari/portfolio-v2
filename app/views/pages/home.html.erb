@@ -10,10 +10,10 @@
     </div>
 
     <div class="hero-body">
-      <div class="l-pri-btn-icon">
-        <%= image_tag "Export-white.svg", alt: "" %>
+      <button class="l-pri-btn-icon">
+        <%= image_tag "Export-white.svg", class: "default-icon" %>
         Download Resume
-      </div>
+      </button>
       <div class="contact-me p-bold">
         <%= image_tag "Message.svg", alt: "" %>
         Let's talk :)
@@ -30,7 +30,41 @@
   </div>
 
   <div class="experience-container">
-    <%# add the damn experience %>
+    <h1>
+      Experience
+    </h1>
+    <div class="experience-cluster">
+      <% @projects.each do |project| %>
+        <div class="experience-card">
+          <div class="experience-card-header">
+            <p class="header-role">
+              <%= project.project_role %>
+            </p>
+            <div class="header-title p-bold">
+              <%= project.project_title %>
+            </div>
+            <p class="header-year">
+              <%= "#{project.starting_date} - #{project.ending_date}" %>
+            </p>
+          </div>
+          <div class="experience-card-body">
+            <ul>
+              <li class="body-project">
+                <%= project.project_summary %>
+              </li>
+              <li class="body-design">
+                <%= project.project_design.design_principles %>
+              </li>
+              <li class="body-tech">
+                <%= project.project_technology.tech_intro %>
+              </li>
+              <li class="body-business">
+                <%= project.project_business.biz_intro %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
-
 </div>
