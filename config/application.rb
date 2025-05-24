@@ -1,5 +1,5 @@
 require_relative "boot"
-
+require 'inline_svg'
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
@@ -31,4 +31,9 @@ module PortfolioV2
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
   end
+end
+
+InlineSvg.configure do |config|
+  # Optionally specify a custom assets path if your SVGs are stored elsewhere
+  # config.assets_path = "app/assets/images"
 end

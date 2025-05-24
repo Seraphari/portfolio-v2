@@ -99,6 +99,9 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
+    inline_svg (1.10.0)
+      activesupport (>= 3.0)
+      nokogiri (>= 1.6)
     io-console (0.8.0)
     irb (1.15.2)
       pp (>= 0.6.0)
@@ -238,8 +241,9 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
-  debug (>= 1.9.0)
+  debug (>= 1.10.0)
   importmap-rails
+  inline_svg
   puma (~> 5.0)
   rails (~> 7.0.8, >= 7.0.8.7)
   sassc-rails
