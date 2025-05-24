@@ -6,13 +6,64 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous">
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   </head>
 
   <body>
     <%= yield %>
+        <!-- ✅ Bootstrap JS (bundle includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgY9gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"></script>
+
+    <footer class="global-footer">
+      <div class="portfolio-footer">
+        <div class="project-footer">
+          <div class="p-bold">
+            Projects
+          </div>
+          <br>
+          <p>Project 1</p>
+          <p>Project 2</p>
+        </div>
+        <div class="education-footer">
+          <div class="p-bold">
+            Education
+          </div>
+          <br>
+          <p>Education 1</p>
+          <p>Education 2</p>
+          <p>Education 3</p>
+          <p>Education 4</p>
+        </div>
+        <div class="skills-footer">
+          <div class="p-bold">
+            Skills / Qualifications
+          </div>
+          <br>
+          <p>Skill 1</p>
+          <p>Skill 2</p>
+          <p>Skill 3</p>
+          <p>Skill 4</p>
+        </div>
+      </div>
+      <div class="contact-footer">
+        <div class="p-bold">
+          Interested? Let's talk :)
+        </div>
+        <p>Fill up your details below and I’ll get in touch as soon as possible. Alternatively, connect with me on my social media and ullamcorper tempor massa at placerat.</p>
+      </div>
+    </footer>
+
   </body>
 </html>

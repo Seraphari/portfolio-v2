@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2025_05_12_035806) do
+ActiveRecord::Schema[7.0].define(version: 2025_05_24_043744) do
   create_table "certifications", force: :cascade do |t|
     t.integer "role_id", null: false
     t.string "company_name", null: false
@@ -87,6 +87,8 @@ ActiveRecord::Schema[7.0].define(version: 2025_05_12_035806) do
     t.string "project_role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "starting_date", null: false
+    t.string "ending_date", null: false
   end
 
   create_table "roles", force: :cascade do |t|
