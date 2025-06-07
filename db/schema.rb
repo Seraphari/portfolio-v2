@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2025_05_24_043744) do
+ActiveRecord::Schema[7.0].define(version: 2025_06_07_061602) do
   create_table "certifications", force: :cascade do |t|
     t.integer "role_id", null: false
     t.string "company_name", null: false
@@ -72,7 +72,7 @@ ActiveRecord::Schema[7.0].define(version: 2025_05_24_043744) do
     t.text "tech_summary_3", null: false
     t.text "tech_summary_4"
     t.text "tech_summary_5"
-    t.text "tech_intro", null: false
+    t.text "tech_stack", null: false
     t.text "system_architecture", null: false
     t.text "development_approach", null: false
     t.datetime "created_at", null: false
@@ -89,6 +89,8 @@ ActiveRecord::Schema[7.0].define(version: 2025_05_24_043744) do
     t.datetime "updated_at", null: false
     t.string "starting_date", null: false
     t.string "ending_date", null: false
+    t.string "project_tagline", limit: 255
+    t.string "cover_image"
   end
 
   create_table "roles", force: :cascade do |t|

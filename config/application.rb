@@ -1,5 +1,6 @@
 require_relative "boot"
-require 'inline_svg'
+# require 'inline_svg'
+require "active_support/core_ext/module/delegation"
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"

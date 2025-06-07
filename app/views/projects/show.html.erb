@@ -1,0 +1,105 @@
+<div class="project-view">
+  <div class="header">
+    <%# TODO: Insert the header menu for all pages; review if homepage needs to have a header %>
+  </div>
+
+  <div class="project-hero">
+    <h1>
+      <%= @project.project_title %>
+    </h1>
+    <p>
+      <%= @project.project_tagline %>
+    </p>
+  </div>
+
+  <div class="img-carousell">
+    <%# TODO: Add a carousell for images (horizontal scrolling) %>
+  </div>
+
+  <div class="project-details">
+    <h1>Project Details</h1>
+  </div>
+
+  <div class="project-summary">
+    <h2>Executive Summary</h2>
+    <p>
+      <%= simple_format(@project.project_summary) %>
+    </p>
+    <div class="project-subdetails">
+      <ul>
+        <li>
+          <p>
+            <b>Client</b>: <%= @project.project_client %>
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Role:</b> <%= @project.project_role %>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="business-section">
+    <h2>Business Details</h2>
+    <div class="details">
+      <div class="detail p-bold">
+        Problem Statement
+        <p><%= @project.project_business.problem_statement %></p>
+      </div>
+      <div class="detail p-bold">
+        Recommended Solutions
+        <p><%= @project.project_business.recommended_solutions %></p>
+      </div>
+      <div class="detail p-bold">
+        Stakeholder Engagement
+        <p><%= @project.project_business.stakeholder_engagement %></p>
+      </div>
+    </div>
+    <div class="download-case">
+       <%= inline_svg("Import.svg", size:"20x20", class:"inline-icon") %>
+      <h3>
+        Download the full business case study.
+      </h3>
+    </div>
+  </div>
+
+  <div class="technology-section">
+    <h2>Technology Details</h2>
+    <div class="details">
+      <div class="detail p-bold">
+        System Architecture
+        <p><%= @project.project_technology.system_architecture %></p>
+      </div>
+      <div class="detail p-bold">
+        Tech Stack
+        <p><%= @project.project_technology.tech_stack %></p>
+      </div>
+      <div class="detail p-bold">
+        Development Approach
+        <p><%= @project.project_technology.development_approach %></p>
+      </div>
+    </div>
+    <%# <h3>Download the full business case study.</h3> %>
+  </div>
+
+  <div class="design-section">
+    <h2>Design Details</h2>
+    <div class="details">
+      <div class="detail p-bold">
+        Design Principles
+        <p><%= @project.project_design.design_principles %></p>
+      </div>
+      <div class="detail p-bold">
+        User Experience Design (UXD)
+        <p><%= @project.project_design.user_experience_design %></p>
+      </div>
+      <div class="detail p-bold">
+        User Interface (UI)
+        <p><%= @project.project_design.user_interface %></p>
+      </div>
+    </div>
+    <%# <h3>Download the full business case study.</h3> %>
+  </div>
+</div>

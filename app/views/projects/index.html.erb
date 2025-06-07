@@ -1,1 +1,9 @@
-<h1>hello world</h1>
+<h1>My Projects - this page should not be seen</h1>\
+
+<ul>
+  <% @projects.each do |project| %>
+  <li>
+    <%= link_to project.project_title, project_path(project) %>
+  </li>
+  <% end %>
+</ul>

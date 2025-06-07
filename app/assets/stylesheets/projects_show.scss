@@ -1,0 +1,67 @@
+@import "colors";
+@import "typography";
+
+.project-view {
+  padding: 10vh 15vw;
+
+  h1, h2 {
+    color: $color-primary;
+  }
+}
+
+.project-details {
+  padding-top: 40px;
+}
+
+.project-summary {
+  h2 {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  ul {
+    padding-top: 16px;
+  }
+
+  li {
+    line-height: 24px;
+  }
+}
+
+.business-section, .technology-section, .design-section {
+  h2 {
+    padding-bottom: 16px;
+  }
+  h3 {
+    padding: 24px 0px;
+  }
+}
+
+.details {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.download-case {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .inline-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,44 @@
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .caption, .card-s, .p-bold {
+  font-weight: bold;
+}
+
+p, .p-small, .body-list {
+  font-weight: normal;
+}
+
+h1 {
+font-size: 36px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.p-bold {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.p-small {
+  font-size: 12px;
+}
+
+.caption {
+  font-size: 12px;
+}
+
+.card-s {
+  font-size: 10px;
+}
+
+.body-list {
+  font-size: 14px;
+  line-height: 24;
+}
